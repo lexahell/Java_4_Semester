@@ -42,7 +42,7 @@ public class Main {
 
         // Произведение всех весов
         int totalWeight = humans.stream()
-                .mapToInt(Human::getWeight)
+                .map(Human::getWeight)
                 .reduce(1, (a, b) -> a * b);
         System.out.println("\nПроизведение всех весов: " + totalWeight);
     }
