@@ -88,6 +88,7 @@ public class CustomExecutorService implements ExecutorService {
 
     @Override
     public Future<?> submit(Runnable task) {
+        tasks.add(task);
         return null;
     }
 

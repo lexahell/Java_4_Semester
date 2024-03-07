@@ -9,7 +9,7 @@ public class Test {
 
         // Создаем несколько задач для выполнения
         Runnable task1 = () -> {
-            System.out.println("Task 1 started");
+            System.out.println("Task 1 started by " + Thread.currentThread().getName());
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
@@ -19,7 +19,7 @@ public class Test {
         };
 
         Runnable task2 = () -> {
-            System.out.println("Task 2 started");
+            System.out.println("Task 2 started by "  + Thread.currentThread().getName());
             try {
                 Thread.sleep(2000);
             } catch (InterruptedException e) {
@@ -29,7 +29,7 @@ public class Test {
         };
 
         Runnable task3 = () -> {
-            System.out.println("Task 3 started");
+            System.out.println("Task 3 started by "  + Thread.currentThread().getName());
             try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {
